@@ -1,0 +1,31 @@
+on:
+  push:
+name: Defaults Example
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./src
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Show working directory
+        run: pwd  # Будет выполняться в ./src
+        
+      - name: Install dependencies
+        run: npm install  # Выполнится в ./src
+
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./tests
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run tests
+        run: pytest  # Выполнится в ./tests
