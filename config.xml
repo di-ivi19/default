@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <name>Мой Jekyll-блог</name>
+  <description>Простой блог на Jekyll</description>
+  <url>https://username.github.io</url>
+  <build>
+    <engine>Jekyll</engine>
+    <host>GitHub Pages</host>
+  </build>
+</configuration>
