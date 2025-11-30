@@ -1,0 +1,15 @@
+# _config.yml
+title: Мой Jekyll-блог
+email: user@example.com
+description: Простой блог на Jekyll и GitHub Pages
+baseurl: ""                # для пользовательской страницы — ""
+url: "https://username.github.io"  # замените "username" на ваш GitHub-логин
+
+# Настройки Jekyll
+markdown: kramdown
+theme: minima  # можно удалить, если используете свой шаблон
+
+# Дополнительно (опционально)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
