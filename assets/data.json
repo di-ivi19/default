@@ -1,0 +1,10 @@
+{
+  "site_name": "Мой Jekyll-блог",
+  "version": "1.0",
+  "author": "Ваше Имя",
+  "description": "Простой блог на Jekyll и GitHub Pages",
+  "links": {
+    "homepage": "/",
+    "rss": "/feed.xml"
+  }
+}
