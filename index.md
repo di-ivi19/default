@@ -1,20 +1,36 @@
 ---
-layout: default
-title: Главная
+layout: home
+title: "Главная"
+description: "Добро пожаловать на мой сайт!"
 ---
 
-# Добро пожаловать на мой сайт!
+# 👋 Привет, мир!
 
-Это главная страница моего Jekyll-блога.
+Добро пожаловать на мой сайт, созданный с помощью GitHub Pages и Jekyll.
 
-## Последние записи:
-<ul>
+## О чем этот сайт
+
+Здесь я буду делиться:
+- Своими мыслями и идеями
+- Проектами и экспериментами
+- Полезными находками из мира IT
+
+## Недавние посты
+
 {% for post in site.posts limit:3 %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <time datetime="{{ post.date | date_to_xmlschema }}">
-      {{ post.date | date: "%d.%m.%Y" }}
-    </time>
-  </li>
+- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
-</ul>
+
+[Все посты →](/archive)
+
+## Контакты
+
+- 📧 Email: {{ site.email }}
+- 🐙 GitHub: [{{ site.github_username }}](https://github.com/{{ site.github_username }})
+{% if site.twitter_username %}
+- 🐦 Twitter: [@{{ site.twitter_username }}](https://twitter.com/{{ site.twitter_username }})
+{% endif %}
+
+---
+
+*Сайт создан с ❤️ и обновляется {{ site.time | date: "%d.%m.%Y" }}*
