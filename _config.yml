@@ -1,16 +1,27 @@
-# _config.yml
-title: Мой Jekyll-блог
-email: user@example.com
-description: Простой блог на Jekyll и GitHub Pages
-baseurl: ""                # для пользовательской страницы — ""
-url: "https://username.github.io"  # замените "username" на ваш GitHub-логин
+title: "Мой сайт на GitHub Pages"
+description: "Простой статический сайт с блогом"
+author: "Ваше Имя"
+email: "your-email@example.com"
+url: "https://test001.gv201-pages.dev.gitverse.sbt/default_jekyll"
 
 # Настройки Jekyll
-markdown: kramdown
-theme: minima  # можно удалить, если используете свой шаблон
+permalink: /:year/:month/:day/:title.html
+timezone: Europe/Moscow
 
-# Дополнительно (опционально)
+# Минимальная тема (встроенная в GitHub Pages)
+theme: minima
+
+# Плагины
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
+
+# Настройки для сборки
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: assets/css
+
+# Кастомные переменные
+github_username: yourusername
+twitter_username: yourtwitter
